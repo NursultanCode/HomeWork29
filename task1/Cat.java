@@ -3,6 +3,7 @@ package task1;
 
 import java.util.List;
 import java.util.Random;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -50,8 +51,9 @@ final class Cat {
         return breed;
     }
 
+
     enum Color {
-        TABBY, SILVER, GRAY, PEACH, GINGER, TORTIE
+        TABBY, SILVER, GRAY, PEACH, GINGER, TORTIE;
     }
 
     enum Breed {
@@ -62,6 +64,26 @@ final class Cat {
 
     // Ваш код может находится здесь
     // остальную часть этого файла вы менять не можете
+    public static int byBread(Cat a1, Cat a2){
+        return a1.getBreed().compareTo(a2.getBreed());
+    }
+
+    public static int byName(Cat a1, Cat a2){
+        return a1.getName().compareTo(a2.getName());
+    }
+
+    public static int byAge(Cat a1, Cat a2){
+        return a1.getAge() - a2.getAge();
+    }
+
+
+    public boolean deleteFiveLettersName(){
+        return name.length()==5;
+    }
+
+    public boolean sameColor(Color c) {
+        return color.toString().equals(c.toString());
+    }
 
     /*********/
 }
