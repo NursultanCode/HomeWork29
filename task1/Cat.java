@@ -60,7 +60,6 @@ final class Cat {
         SPHINX, BRITAIN, SCOTTISH, VULGARIS, ORIENTAL
     }
 
-    /*********/
 
     // Ваш код может находится здесь
     // остальную часть этого файла вы менять не можете
@@ -85,7 +84,6 @@ final class Cat {
         return color.toString().equals(c.toString());
     }
 
-    /*********/
 }
 
 
