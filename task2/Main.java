@@ -12,11 +12,11 @@ public class Main {
         // для решения примените лямбда-выражения,
         // каждый кот должен уметь выполнять что-то своё
         var cats = new ArrayList<ActiveCat>();
+
+        // добавьте ещё два-три кота, с совершенно другими действиями
         cats.add(new ActiveCat(ActiveCat::jump));
         cats.add(new ActiveCat(ActiveCat::eat));
         cats.add(new ActiveCat(ActiveCat::sleep));
-        // добавьте ещё два-три кота, с совершенно другими действиями
-
         cats.forEach(ActiveCat::doAction);
     }
 
