@@ -10,7 +10,6 @@ public class Main {
         // Я Tibbles. Я сплю!
         // Я Ginger. Я кушаю!
         // для решения примените лямбда-выражения,
-        // my comment for commit
         // каждый кот должен уметь выполнять что-то своё
         var cats = new ArrayList<ActiveCat>();
         cats.add(new ActiveCat(ActiveCat::jump));
